@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -20,6 +19,7 @@
         padding: 0;
         background-color: #f4f4f4;
         color: #333;
+        line-height: 1.6;
       }
 
       h1, h2 {
@@ -27,10 +27,9 @@
         color: #333;
       }
 
-      /* Título principal */
       h1 span {
         color: #1e90ff;
-        font-size: 2em;
+        font-size: 2rem;
       }
 
       /* Estilos para los enlaces */
@@ -38,6 +37,8 @@
         text-decoration: none;
         color: #0077cc;
         font-weight: bold;
+        display: inline-block;
+        margin-bottom: 10px;
       }
 
       a:hover {
@@ -52,11 +53,14 @@
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       /* Sección de enlaces */
       .row p {
-        font-size: 1.1em;
+        font-size: 1.1rem;
         margin: 10px 0;
       }
 
@@ -72,10 +76,20 @@
           padding: 10px;
         }
         h1 span {
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
         a {
-          font-size: 1em;
+          font-size: 1rem;
+        }
+      }
+
+      /* Ajuste de tamaño en pantallas muy pequeñas (móviles) */
+      @media (max-width: 480px) {
+        h1 span {
+          font-size: 1.3rem;
+        }
+        .row p {
+          font-size: 1rem;
         }
       }
     </style>
@@ -100,3 +114,5 @@
     </div>
   </body>
 </html>
+
+
