@@ -12,3 +12,8 @@
 
 # **Foto** 
  ![alt text](image.png)
+
+ # Prácticas
+
+ [enlace a pagina web y prácticas](index.html)
+
