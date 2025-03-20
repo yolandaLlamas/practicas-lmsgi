@@ -21,8 +21,23 @@
     <link href="/dashboard/images/favicon.png" rel="icon" type="image/png" />
 
 
-  </head>
-
+    <style>
+      .svg-icon {
+          position: absolute;
+          top: 50px;
+          left: 40px;
+          z-index: 10; /* Asegura que el SVG esté encima de otros elementos */
+      }
+      
+      </style>
+      
+        </head>
+        <svg class="svg-icon" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="80" fill="red"/>
+          <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="48" fill="yellow" text-anchor="middle" alignment-baseline="middle">
+            IGC
+          </text>
+        </svg> 
   <body class="index">
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
