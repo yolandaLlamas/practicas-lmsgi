@@ -1,199 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Córdoba Ciudad Patrimonio">
-        <meta name="keywords" content="Turismo, patrimonio, viajes">
-        <title>Cordoba Ciudad Patrimonio</title>
-        <style>
-            /* Estilos generales */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-                color: #333;
-            }
-    
-            header {
-                background-color: #16a085;
-                color: white;
-                text-align: center;
-                padding: 20px 0;
-            }
-    
-            header h1 {
-                font-size: 2.5em;
-                margin: 0;
-            }
-    
-            /* Estilo para la imagen */
-            .imagen {
-                width: 300px;
-                height: 200px;
-                object-fit: cover;
-                transition: transform 0.3s ease, opacity 0.3s ease;
-                display: block;
-                margin: 20px auto;
-            }
-    
-            .imagen:hover {
-                transform: scale(1.1);
-                opacity: 0.8;
-            }
-    
-            /* Estilos de navegación */
-            nav {
-                background-color: #2c3e50;
-                text-align: center;
-                padding: 10px 0;
-            }
-    
-            nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-    
-            nav ul li {
-                display: inline;
-                margin-right: 15px;
-            }
-    
-            nav ul li a {
-                color: white;
-                text-decoration: none;
-                font-size: 1.2em;
-                transition: color 0.3s ease;
-            }
-    
-            nav ul li a:hover {
-                color: #16a085;
-            }
-    
-            /* Estilo para el contenido principal */
-            main {
-                max-width: 1200px;
-                margin: 30px auto;
-                padding: 0 20px;
-                display: flex;
-                justify-content: space-between;
-            }
-    
-            section {
-                width: 70%;
-            }
-    
-            article {
-                background-color: white;
-                padding: 20px;
-                margin-bottom: 20px;
-                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            article h2 {
-                font-size: 2em;
-                margin-bottom: 10px;
-                color: #16a085;
-            }
-    
-            article p {
-                line-height: 1.6;
-                margin-bottom: 15px;
-            }
-    
-            article cite {
-                font-style: italic;
-            }
-    
-            /* Estilo para el aside (publicidad y enlaces) */
-            aside {
-                width: 25%;
-                background-color: white;
-                padding: 20px;
-                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            aside p {
-                margin-bottom: 20px;
-            }
-    
-            aside h3 {
-                font-size: 1.5em;
-                color: #16a085;
-                margin-bottom: 15px;
-            }
-    
-            aside a {
-                display: block;
-                margin-bottom: 10px;
-                color: #2c3e50;
-                text-decoration: none;
-            }
-    
-            aside a:hover {
-                color: #16a085;
-            }
-    
-            /* Estilo del pie de página */
-            footer {
-                background-color: #2c3e50;
-                color: white;
-                text-align: center;
-                padding: 20px 0;
-            }
-    
-            footer address {
-                font-style: normal;
-            }
-    
-            footer small {
-                font-size: 0.8em;
-            }
-    
-            /* Estilo para el botón de regreso al inicio */
-            a[href="#top"] {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background-color: #16a085;
-                padding: 10px;
-                border-radius: 50%;
-                text-align: center;
-                color: white;
-                font-size: 20px;
-                text-decoration: none;
-                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-                transition: background-color 0.3s ease;
-            }
-    
-            a[href="#top"]:hover {
-                background-color: #2c3e50;
-            }
-    
-            /* Estilos responsivos */
-            @media (max-width: 768px) {
-                main {
-                    flex-direction: column;
-                    align-items: center;
-                }
-    
-                section, aside {
-                    width: 100%;
-                }
-            }
-    
-        </style>
+    <meta name="description" content="Córdoba Ciudad Patrimonio">
+    <meta name="keywords" content="Turismo, patrimonio, viajes">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<img src="./img/logo.png" alt="logo" width="80">
+
 <body>
+    <header>
+        <img src="./img/logo.png" alt="logo" class="imagen" width="80">
+        <h1>Córdoba Ciudad Patrimonio</h1>
+    </header>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -203,19 +24,28 @@
             <li><a href="medina.html">Medina Azahara</a></li>
             <li><a href="contactos.html">Contacto</a></li>
             <li><a href="turismo.html">Turismo</a></li>
-             </ul>
+        </ul>
     </nav>
-    <h1>Contacto</h1>
-    <p>Puedes contactarnos a través de los siguientes métodos:</p>
-    
-    <!-- Enlace de tipo mailto -->
-    <p>
-        <a href="mailto:info@ejemplo.com">Enviar un correo electrónico</a>
-    </p>
-    
-    <!-- Enlace de tipo tel -->
-    <p>
-        <a href="tel:+34123456789">Llamar al +34 123 456 789</a>
-    </p>
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <p>Puedes contactarnos a través de los siguientes métodos:</p>
+
+            <!-- Enlace de tipo mailto -->
+            <p>
+                <a href="mailto:info@ejemplo.com">Enviar un correo electrónico</a>
+            </p>
+
+            <!-- Enlace de tipo tel -->
+            <p>
+                <a href="tel:+34123456789">Llamar al +34 123 456 789</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <address>Córdoba España</address>
+        <small>&copy; Todos los derechos ...</small>
+    </footer>
 </body>
+
 </html>
